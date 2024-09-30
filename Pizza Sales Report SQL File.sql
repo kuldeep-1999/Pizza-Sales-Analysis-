@@ -172,14 +172,3 @@ FROM
 GROUP BY 1 , 2
 ORDER BY 3 DESC
 LIMIT 5;
-
-#Order Frequency by Day of the Week:
-SELECT months, pizza_name, Order_Count
-FROM (
-    SELECT months, pizza_name, COUNT(order_id) AS Order_Count,
-           ROW_NUMBER() OVER (PARTITION BY months ORDER BY COUNT(order_id) DESC) AS rank1
-    FROM pizza_sales
-    GROUP BY months, pizza_name
-) AS ranked_pizzas
-WHERE rank1 = 1
-ORDER BY 2 desc;
