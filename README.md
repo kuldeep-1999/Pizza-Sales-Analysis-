@@ -70,7 +70,7 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC;
 
-#### Monthl Order:
+#### Monthly Order:
 SELECT 
     months, COUNT(DISTINCT (order_id)) AS Total_Orders
 FROM
@@ -101,7 +101,7 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC;
 
-#### Percentage of sales by pizza SIZE :
+#### Percentage of sales by pizza size :
 SELECT 
     pizza_size AS Size,
     CAST(SUM(total_price) AS DECIMAL (10 , 2 )) AS Total_Sales,
@@ -226,8 +226,9 @@ The analysis of the pizza sales data has provided several valuable insights that
 - Each day of the week shows varying preferences for pizzas. For instance, The Pepperoni Pizza might be the top seller on Fridays, and similar trends may be observed for other days. Understanding these preferences allows for tailored promotions (e.g., "Pizza of the Day" deals) that align with customer demand.
 
 ### Actionable Recommendations:
-- Promotions and Bundling: Offer bundle deals or family-size packages for large pizzas, as they are the most popular and contribute the most to revenue. Additionally, combo deals with frequently ordered pizza pairs could boost sales.
-- Day-Specific Offers: Tailor promotions based on the top pizza for each day of the week to drive sales and customer satisfaction.
-- Menu Optimization: Focus on promoting the best-performing pizza categories, while considering revamping or better marketing strategies for less popular categories to maintain balance.
-- Seasonal Promotions: Implement special deals or limited-time offers in peak months like July to sustain momentum and increase customer retention.
+- **Promotions and Bundling:** Offer bundle deals or family-size packages for large pizzas, as they are the most popular and contribute the most to revenue. Additionally, combo deals with frequently ordered pizza pairs could boost sales.
+- **Day-Specific Offers:** Tailor promotions based on the top pizza for each day of the week to drive sales and customer satisfaction.
+- **Menu Optimization:** Focus on promoting the best-performing pizza categories, while considering revamping or better marketing strategies for less popular categories to maintain balance.
+- **Seasonal Promotions:** Implement special deals or limited-time offers in peak months like July to sustain momentum and increase customer retention.
+
 This data-driven approach will allow the business to better align its offerings with customer preferences, optimize promotions, and ultimately drive revenue growth.
