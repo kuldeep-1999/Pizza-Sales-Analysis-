@@ -28,7 +28,7 @@ The dataset contains details about pizza sales, with the following key columns:
 - pizza_ingredients: Ingredients used in the pizza.
 - pizza_name: Full name of the pizza.
 
-## Initial Insights:
+## Insights:
 
 #### Total revenue :
 SELECT 
